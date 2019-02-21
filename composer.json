@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nitro\\Options\\OptionServiceProvider"
+                "Nitro\\Options\\OptionsServiceProvider"
             ],
             "aliases": {
                 "Options": "Nitro\\Options\\Facades\\OptionsFacade"
