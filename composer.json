@@ -1,0 +1,46 @@
+{
+    "name": "mxrck/laravel-dboptions",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mxrck",
+            "email": "marco@serprogramador.es"
+        }
+    ],
+    "homepage": "https://github.com/mxrck/laravel-dboptions",
+    "keywords": ["Laravel", "Options", "Database"],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=7.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    },
+    "description": "Create database based options for your laravel projects",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nitro\\Options\\OptionServiceProvider"
+            ],
+            "aliases": {
+                "Options": "Nitro\\Options\\Facades\\OptionsFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Nitro\\Options\\": "src/"
+        },
+        "files": [
+            "src/Helpers/OptionsHelper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nitro\\Options\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
