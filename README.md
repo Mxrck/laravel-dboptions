@@ -63,11 +63,19 @@ php artisan option:update {KEY} {VALUE}
 ```
 
 #### Get an option
+
 ```bash
 php artisan option:get {KEY}
 ```
 
-### List all current options
+#### List all current options
+
 ```bash
 php artisan option:all
+```
+
+### Testing
+
+```bash
+composer test
 ```
