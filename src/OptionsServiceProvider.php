@@ -41,7 +41,7 @@ class OptionsServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(self::OPTIONS_PACKAGE_PATH.'Migrations');
         $this->publishes([
-            self::OPTIONS_PACKAGE_PATH.'Config/nitro.options.php' => config_path('nitro.options.php'),
+            self::OPTIONS_PACKAGE_PATH.'nitro.options.php' => config_path('nitro.options.php'),
         ]);
         $this->mergeConfigFrom(self::OPTIONS_PACKAGE_PATH.'nitro.options.php', 'nitro.options');
         Blade::directive('options', function () {
