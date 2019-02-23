@@ -1,6 +1,6 @@
 # Laravel DB Options
 
-[![Build Status](https://img.shields.io/travis/mxrck/laravel-dboptions/master.svg)](https://travis-ci.org/Mxrck/laravel-dboptions/)
+[![Build Status](https://img.shields.io/travis/Mxrck/laravel-dboptions/master.svg)](https://travis-ci.org/Mxrck/laravel-dboptions/)
 
 Use the database to store key/value options, with preload function and context objects with fallback to global options
 
@@ -129,7 +129,7 @@ $value = Option::context( Context::make( $user ) )->get( 'somekey' );
 // Or
 $value = Option::context( $user )->get( 'somekey' );
 // Or
-$value = option( context_option( $user ) )->get( 'somekey' );
+$value = option( option_context( $user ) )->get( 'somekey' );
 // Or
 $value = option( $user )->get( 'somekey' );
 ``` 
