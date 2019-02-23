@@ -8,6 +8,7 @@
 
 namespace Nitro\Options;
 
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Nitro\Options\Console\OptionAll;
