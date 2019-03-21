@@ -19,10 +19,10 @@ class CreateOptionsTable extends Migration
             $table->text('value');
             $table->boolean('autoload')->default(false);
             $table->boolean('public')->default(false);
-            $table->nullableMorphs('optionable', 'optionable_unique');
+            $table->nullableMorphs('optionable');
 
             $table->index(['optionable_id', 'optionable_type']);
-            $table->unique(['key', 'optionable_type', 'optionable_id']);
+            $table->unique(['key', 'optionable_type', 'optionable_id'], 'optionable_unique');
         });
     }
 
