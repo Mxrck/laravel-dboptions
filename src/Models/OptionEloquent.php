@@ -27,7 +27,7 @@ use Nitro\Options\Contracts\OptionableInterface;
 class OptionEloquent extends Eloquent
 {
     protected $table        = 'options';
-    protected $primaryKey   = 'key';
+    protected $primaryKey   = 'id';
     protected $fillable     = ['key', 'value', 'autoload', 'public', 'optionable_id', 'optionable_type'];
     protected $hidden       = ['autoload', 'public'];
     protected $casts        = [
